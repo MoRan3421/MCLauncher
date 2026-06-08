@@ -16,3 +16,7 @@ minecraft/modpacks/
 runtimes/
 .env
 *.log
+build/
+dist/
+*.spec
+__pycache__/

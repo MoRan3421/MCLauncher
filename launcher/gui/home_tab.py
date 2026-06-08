@@ -68,13 +68,13 @@ class HomeTab(ctk.CTkFrame):
             quick_card, '👤  选择账户', self._switch_account,
             icon='#00bcd4'
         )
-        self.account_btn.pack(fill='x', padx=15, pady=4)
+        self.account_btn.grid(row=1, column=0, padx=15, pady=4, sticky='ew')
 
         self.instance_btn = self._make_btn(
             quick_card, '📦  选择实例', self._switch_instance,
             icon='#7c4dff'
         )
-        self.instance_btn.pack(fill='x', padx=15, pady=4)
+        self.instance_btn.grid(row=2, column=0, padx=15, pady=4, sticky='ew')
 
         self.launch_btn = ctk.CTkButton(
             quick_card, text='▶   启动游戏',
@@ -84,7 +84,7 @@ class HomeTab(ctk.CTkFrame):
             text_color='#000000',
             command=self._launch
         )
-        self.launch_btn.pack(fill='x', padx=15, pady=(12, 18))
+        self.launch_btn.grid(row=3, column=0, padx=15, pady=(12, 18), sticky='ew')
 
         # Info Card
         info_card = self._make_card(content, '📊 启动信息')
